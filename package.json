@@ -1,0 +1,24 @@
+{
+  "name": "youtube-autothumb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yasin21/Youtube-AuthThumb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yasin21/Youtube-AuthThumb/issues"
+  },
+  "homepage": "https://github.com/Yasin21/Youtube-AuthThumb#readme",
+  "dependencies": {
+    "handlebars": "^4.7.6",
+    "puppeteer": "^5.5.0"
+  }
+}

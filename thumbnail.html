@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>--</title>
+    <style>
+        body{
+            width: 1280px;
+            height: 720px;
+            background: linear-gradient(#61b15a, #adce74) no-repeat;
+            /*outline: 1px solid black;*/
+            position: relative;
+            color: white;
+        }
+        .view{
+            position: absolute;
+            top:20px;
+            right:20px;
+            text-align: center;
+            width: 200px;
+            padding: 10px;
+            border-radius: 20px;
+            transform: rotate(40deg) translate(60px,40px);
+            /*height: 80px;*/
+            border: 2px solid white ;
+            font-size: 25px;
+            /*outline: 1px dotted black;*/
+        }
+
+        .like{
+            position: absolute;
+            top:20px;
+            left:20px;
+            text-align: center;
+            width: 200px;
+            padding: 10px;
+            border-radius: 20px;
+            transform: rotate(-40deg) translate(-50px,40px);
+            /*height: 80px;*/
+            border: 2px solid white ;
+            font-size: 25px;
+            /*outline: 1px dotted black;*/
+        }
+
+        .topComment{
+            position: absolute;
+            top:50%;
+            left:50%;
+            text-align: center;
+            width: 200px;
+            padding: 10px;
+            border-radius: 20px;
+            transform: translate(-50%,-50%);
+            /*height: 80px;*/
+            border: 2px solid white ;
+            font-size: 25px;
+            /*outline: 1px dotted black;*/
+        }
+        .dislike{
+            position: absolute;
+            bottom:20px;
+            left:50%;
+            text-align: center;
+            width: 200px;
+            padding: 10px;
+            border-radius: 20px;
+            transform: translate(-50%,0px);
+            /*height: 80px;*/
+            border: 2px solid white ;
+            font-size: 25px;
+            /*outline: 1px dotted black;*/
+        }
+
+    </style>
+</head>
+<body>
+<div class="view">
+    <div class="view-line">View</div>
+    <div class="view-count">{{views}}</div>
+</div>
+<div class="like"><div>Like</div> <div>{{like}}</div></div>
+<div class="dislike">
+    <div>Dislike</div>
+    <div>
+        {{dislike}}
+    </div>
+</div>
+<div class="topComment"><div>Top Comment </div><div>
+    {{topComment}}
+</div></div>
+
+</body>
+</html>
